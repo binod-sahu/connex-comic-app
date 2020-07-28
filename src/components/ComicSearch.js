@@ -12,7 +12,7 @@ const ComicSearch = (props) => {
         setErrors(validate(comicNo));
         if (+comicNo !== 0 && !errors.message) {
             const url = `https://xkcd.com/${comicNo}/`
-            window.open(url, '_new','toolbar=0,location=0,menubar=0');
+            window.open(url, 'toolbar=0,location=0,menubar=0');
         }
       }
 

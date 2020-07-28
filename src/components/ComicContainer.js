@@ -11,11 +11,11 @@ const ComicContainer = ({comicData, fatchComic}) => {
 
     const openComic = (id) =>  {
         const url = `https://xkcd.com/${id}/`
-        window.open(url, '_new','toolbar=0,location=0,menubar=0');
+        window.open(url, 'toolbar=0,location=0,menubar=0');
     }
 
     return comicData.isLoading ? (<div className={styles.loader}></div>)
-        : comicData.error ? (<h1> {comicData.error}</h1>)
+        : comicData.error ? (<div className={styles.error}>{comicData.error}</div>)
         :(<div className={styles.card}>
             <div className={styles.title}>Current Comic Details</div>
             <img 
