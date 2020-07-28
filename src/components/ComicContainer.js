@@ -17,14 +17,14 @@ const ComicContainer = ({comicData, fatchComic}) => {
     return comicData.isLoading ? (<div className={styles.loader}></div>)
         : comicData.error ? (<div className={styles.error}>{comicData.error}</div>)
         :(<div className={styles.card}>
-            <div className={styles.title}>Current Comic Details</div>
+            <div className={styles.title}>Most Recent Comin Available</div>
             <img 
                 src={comicData.data.img} 
                 alt={comicData.data.alt} 
                 title={comicData.data.alt}
                 onClick={openComic.bind(this, comicData.data.num)}/>
             <div className={styles.container}>
-                <h4><b>{comicData.data.title}</b></h4> 
+                <h4><b>Title: {comicData.data.title}</b></h4> 
             </div>
             
         </div>

@@ -7,10 +7,10 @@ class ErrorBoundary extends Component {
     }
   
     componentDidCatch(error, info) {
-      this.setState({ hasError: true });
-      // eslint-disable-next-line no-undef
-      logErrorToMyService(error, info);
-    }
+        this.setState({ errorOccurred: true });
+        // eslint-disable-next-line no-undef
+        logErrorToMyService(error, info)
+      }
   
     render() {
       if (this.state.hasError) {
