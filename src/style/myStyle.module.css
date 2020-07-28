@@ -1,0 +1,65 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: fit-content;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 20px 16px;
+  background-color: azure;
+}
+
+.title {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 1px solid #ccc;
+}
+.isDanger{
+  color: red;
+  margin-top: 5px;
+}
+.inputContainer{
+  margin-bottom: 20px;
+}
+input[type=number] {
+  background-color: white;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+button {
+  padding: 9px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+.loader:empty {
+  position: absolute;
+  top: calc(50% - 4em);
+  left: calc(50% - 4em);
+  width: 6em;
+  height: 6em;
+  border: 1.1em solid rgba(0, 0, 0, 0.2);
+  border-left: 1.1em solid #000000;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
