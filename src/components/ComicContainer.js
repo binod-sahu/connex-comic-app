@@ -17,7 +17,7 @@ const ComicContainer = ({comicData, fatchComic}) => {
     return comicData.isLoading ? (<div className={styles.loader}></div>)
         : comicData.error ? (<div className={styles.error}>{comicData.error}</div>)
         :(<div className={styles.card}>
-            <div className={styles.title}>Most Recent Comin Available</div>
+            <div className={styles.title}>Most Recent Comic Available</div>
             <img 
                 src={comicData.data.img} 
                 alt={comicData.data.alt} 
