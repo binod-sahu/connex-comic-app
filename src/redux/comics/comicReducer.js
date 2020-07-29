@@ -1,4 +1,4 @@
-import { FATCH_COMIC_START, FATCH_COMIC_SUCCESS, FATCH_COMIC_FAILURE } from './comicTypes'
+import { FATCH_COMIC_START, FATCH_COMIC_SUCCESS, FATCH_COMIC_FAILURE } from './comicActionTypes'
 
 const initialState = {
     isLoading: false,
